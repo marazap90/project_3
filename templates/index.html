@@ -45,12 +45,12 @@
     }
     /* First image (Logo. Full height) */
     .bgimg-1 {
-        background-image: url('https://www.wallpapersin4k.org/wp-content/uploads/2017/04/NBA-Desktop-Wallpaper-24.jpg');
+        background-image: url('https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/07/12/15/deltaloo.jpg?width=668');
         min-height: 100%;
     }
     /* Second image (Analytics) */
     .bgimg-2 {
-        background-image: url("https://download.hipwallpaper.com/desktop/1920/1080/68/30/Dnp6rS.jpg");
+        background-image: url("http://theflight.info/wp-content/uploads/2016/04/Seat_map_United_Airlines_Airbus_A320.jpg");
         min-height: 40%;
     }
     /* Turn off parallax scrolling for tablets and phones */
@@ -69,47 +69,38 @@
     <!-- First Parallax Image with Logo Text -->
     <div class="bgimg-1 w3-display-container " id="home">
         <div class="w3-display-middle" style="white-space:nowrap;">
-            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">2018-2019 NBA Season Statistics Dashboard
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Sentiment Analysis of the Airline Twitter
                 
         </div>
     </div>
 
-    <!-- Container (League at a Glance) -->
+    <!-- Container (Summary) -->
     
     <div class="w3-content w3-container w3-padding-64" id="about">
-        <h3 class="w3-center">The League at a Glance</h3>
-        <p class="w3-center">
-            <em>The map displays each NBA team's basic info, including Location, Name, Conference, Division, and Aerna.<br> 
-                Interact with the map by zooming in and out as well as clicking each icon.
-        </em>
-          <div id="map"></div>
+        <h3 class="w3-center">What is this about?</h3>
+        <p class="w3-left">
+            <em>Twitter can sometimes have no mercy. But because of that, it is a wonderfully fast litmus test for tracking the customer experience.
+                <br>
+                <br>
+            We decided to look into Twitter superpowers for analyzing the user experience & brand image within the US airlines industry. On the subset of tweets from February 2015, which are mentioning any of the major 6 US airlines (American, Delta, Southwest, United, US Airways, Virgin) we're builduing a machine learning model which could then be used for fast sentiment analysis at any time. And we are also explaining the relationships in between the collected data.
+            </em>
+        </p>
 
-
-<script type="text/javascript" src="../static/js/map.js"></script>
-       
-</p>
-
-        </div>
-        
     </div>
-
+        
     <div class="w3-row w3-center w3-dark-grey w3-padding-16">
-        <div class="w3-quarter w3-section">
-            <span class="w3-xlarge">30</span>
-            <br> Teams
+        <div class="w3-third w3-section">
+            <span class="w3-xlarge">Training Data</span>
+            <br> Feb 2015
         </div>
-        <div class="w3-quarter w3-section">
-            <span class="w3-xlarge">82</span>
-            <br> Games Per Season
+        <div class="w3-third w3-section">
+            <span class="w3-xlarge">16,000</span>
+            <br> tweets
         </div>
-        <div class="w3-quarter w3-section">
-            <span class="w3-xlarge">15</span>
-            <br> Active Players on Each Roster
-        </div>
-        <div class="w3-quarter w3-section">
-            <span class="w3-xlarge">Toronto Raptors</span>
-            <br> Current Champion
-        </div>
+        <div class="w3-third w3-section">
+            <span class="w3-xlarge">6</span>
+            <br> Airlines
+        </div>      
     </div>
 
     <!-- Second Parallax Image with ANALYTICS Text -->
@@ -118,49 +109,58 @@
             <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">ANALYTICS</span>
         </div>
     </div>
+    
 
-    <!-- Container (Analytics Section) -->
-    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+        <!-- Container (analysis report) -->
 
-        <h3 class="w3-center">The Charts Display Summary Statistics for Teams and Players</h3>
-        <p class="w3-center">
-
-        <div id ="myDiv_3" style="height: 450px; width: 100%;"></div>
-        <script type="text/javascript" src="../static/js/scatter.js"></script>
-
-        <div id="chartContainer" style="height: 450px; width: 100%;"></div>
-        <br>
-        <br>
-        <div id="chartContainer2" style="height: 450px; width: 100%;"></div>
-        <br>
-        <br>
-        <div id="chartContainer3" style="height: 450px; width: 100%;"></div>
-        <br>
-        <br>
-        <div id="chartContainer4" style="height: 450px; width: 100%;"></div>
-        <br>
-        <br>
-        <div id="chartContainer5" style="height: 450px; width: 100%;"></div>
-        <br>
-        <br>
-        <div id="chartContainer6" style="height: 450px; width: 100%;"></div>
-        <br>
-        <br>
-        <div id="chartContainer7" style="height: 450px; width: 100%;"></div>
-        <script type="text/javascript" src="../static/js/charts.js"></script>
-
-        <div id ="myDiv" style="height: 450px; width: 100%;"></div>
-        <script type="text/javascript" src="../static/js/pie.js"></script>
-        <div id ="myDiv_2" style="height: 450px; width: 100%;"></div>
-        <script type="text/javascript" src="../static/js/true_shooting.js"></script>
-
-
-            <em>Title
-                <br> 
-                <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </em>
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h3 class="w3-center">First thing we looked at:</h3>
+        <p class="w3-left">
+            <em>Some summary analysis; blablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablabla
+                <br>
+                <br>
+            Some summary analysis; blablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablabla
+            </em>
+                <br>
+            <img src="https://images-na.ssl-images-amazon.com/images/I/514FHZG74vL.jpg" alt="template_chart">
         </p>
+    </div>
+    
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h3 class="w3-center">Then we saw:</h3>
+        <p class="w3-left">
+            <em>Some summary analysis; blablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablabla
+                <br>
+            <img src="https://images-na.ssl-images-amazon.com/images/I/514FHZG74vL.jpg" alt="template_chart">
+        </p>
+    </div>
+    
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h3 class="w3-center">And then:</h3>
+        <p class="w3-left">
+            <em>Some summary analysis; blablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablabla
+                <br>
+            <img src="https://images-na.ssl-images-amazon.com/images/I/514FHZG74vL.jpg" alt="template_chart">         
+        </p>
+    </div>
+        
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h3 class="w3-center">We decided to build a ML model for sentiment analysis:</h3>
+        <p class="w3-left">
+            <em>Some summary analysis; blablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablabla
+                <br>
+            <img src="https://images-na.ssl-images-amazon.com/images/I/514FHZG74vL.jpg" alt="template_chart">         
+        </p>
+    </div>
+        
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h3 class="w3-center">And, it worked like this:</h3>
+        <p class="w3-left">
+            <em>Some summary analysis; blablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablablablablabla blablabla blablabla
+                <br>
+            <img src="https://images-na.ssl-images-amazon.com/images/I/514FHZG74vL.jpg" alt="template_chart">         
+        </p>
+    </div>
 
 
 
@@ -173,13 +173,9 @@
     <footer class="w3-center w3-black w3-padding-64">
         <a href="#home" class="w3-button w3-light-grey">
             <i class="fa fa-arrow-up w3-margin-right"></i>Back to the top</a>
-        <div class="w3-xlarge w3-section boxhead">
-            <a href="https://www.linkedin.com/in/jacob-e-thomas-atx/" target="_blank">
-                <i class="fa fa-linkedin w3-hover-opacity"></i>
-            </a>
-        </div>
-        <p>Developed by Jacob Thomas, Marek Zapletal, & Josh Benenoch</p>
-        <p>TEXAS McCombs Data Science Program </p>
+
+        <p>Developed by Marek Zapletal, Josh Benenoch & Cletus Ajim</p>
+        <p>UT Data Analytics & Visualization Bootcamp</p>
         <p>2019</p>
     </footer>  
   
