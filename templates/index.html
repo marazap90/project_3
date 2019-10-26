@@ -7,8 +7,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
-<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+<link rel="stylesheet" href="https://cdn.jupyter.org/notebook/5.1.0/style/style.min.css">
 <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
 <script src="https://d3js.org/d3.v5.min.js"></script>
@@ -48,11 +47,7 @@
         background-image: url('https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/07/12/15/deltaloo.jpg?width=668');
         min-height: 100%;
     }
-    /* Second image (Analytics) */
-    .bgimg-2 {
-        background-image: url("http://theflight.info/wp-content/uploads/2016/04/Seat_map_United_Airlines_Airbus_A320.jpg");
-        min-height: 40%;
-    }
+   
     /* Turn off parallax scrolling for tablets and phones */
     @media only screen and (max-device-width: 1024px) {
         .bgimg-1,
@@ -88,27 +83,195 @@
 
     </div>
         
-    <div class="w3-row w3-center w3-dark-grey w3-padding-16">
-        <div class="w3-third w3-section">
-            <span class="w3-xlarge">Training Data</span>
-            <br> Feb 2015
-        </div>
-        <div class="w3-third w3-section">
-            <span class="w3-xlarge">16,000</span>
-            <br> tweets
-        </div>
-        <div class="w3-third w3-section">
-            <span class="w3-xlarge">6</span>
-            <br> Airlines
-        </div>      
-    </div>
+
 
     <!-- Second Parallax Image with ANALYTICS Text -->
     <div class="bgimg-2 w3-display-container">
-        <div class="w3-display-middle">
-            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">ANALYTICS</span>
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-large w3-gray w3-xlarge w3-wide w3-animate-opacity">DATASET</span>
         </div>
     </div>
+    
+        <br>
+        <br>
+        
+<!-- Jupyter notebook dataset -->        
+        <div class="output_area">
+        <div class="prompt output_prompt">       </div>
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>tweet_id</th>
+      <th>airline_sentiment</th>
+      <th>airline_sentiment_confidence</th>
+      <th>negativereason</th>
+      <th>negativereason_confidence</th>
+      <th>airline</th>
+      <th>airline_sentiment_gold</th>
+      <th>name</th>
+      <th>negativereason_gold</th>
+      <th>retweet_count</th>
+      <th>text</th>
+      <th>tweet_coord</th>
+      <th>tweet_created</th>
+      <th>tweet_location</th>
+      <th>user_timezone</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>570306133677760513</td>
+      <td>neutral</td>
+      <td>1.0000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Virgin America</td>
+      <td>NaN</td>
+      <td>cairdin</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>@VirginAmerica What @dhepburn said.</td>
+      <td>NaN</td>
+      <td>2015-02-24 11:35:52 -0800</td>
+      <td>NaN</td>
+      <td>Eastern Time (US &amp; Canada)</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>570301130888122368</td>
+      <td>positive</td>
+      <td>0.3486</td>
+      <td>NaN</td>
+      <td>0.0000</td>
+      <td>Virgin America</td>
+      <td>NaN</td>
+      <td>jnardino</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>@VirginAmerica plus you've added commercials t...</td>
+      <td>NaN</td>
+      <td>2015-02-24 11:15:59 -0800</td>
+      <td>NaN</td>
+      <td>Pacific Time (US &amp; Canada)</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>570301083672813571</td>
+      <td>neutral</td>
+      <td>0.6837</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Virgin America</td>
+      <td>NaN</td>
+      <td>yvonnalynn</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>@VirginAmerica I didn't today... Must mean I n...</td>
+      <td>NaN</td>
+      <td>2015-02-24 11:15:48 -0800</td>
+      <td>Lets Play</td>
+      <td>Central Time (US &amp; Canada)</td>
+    </tr>
+    
+      <!-- filler row -->        
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>  
+    
+    <tr>
+      <th>14637</th>
+      <td>569587242672398336</td>
+      <td>neutral</td>
+      <td>1.0000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>American</td>
+      <td>NaN</td>
+      <td>sanyabun</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>@AmericanAir Please bring American Airlines to...</td>
+      <td>NaN</td>
+      <td>2015-02-22 11:59:15 -0800</td>
+      <td>Nigeria,lagos</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>14638</th>
+      <td>569587188687634433</td>
+      <td>negative</td>
+      <td>1.0000</td>
+      <td>Customer Service Issue</td>
+      <td>0.6659</td>
+      <td>American</td>
+      <td>NaN</td>
+      <td>SraJackson</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>@AmericanAir you have my money, you change my ...</td>
+      <td>NaN</td>
+      <td>2015-02-22 11:59:02 -0800</td>
+      <td>New Jersey</td>
+      <td>Eastern Time (US &amp; Canada)</td>
+    </tr>
+    <tr>
+      <th>14639</th>
+      <td>569587140490866689</td>
+      <td>neutral</td>
+      <td>0.6771</td>
+      <td>NaN</td>
+      <td>0.0000</td>
+      <td>American</td>
+      <td>NaN</td>
+      <td>daviddtwu</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>@AmericanAir we have 8 ppl so we need 2 know h...</td>
+      <td>NaN</td>
+      <td>2015-02-22 11:58:51 -0800</td>
+      <td>dallas, TX</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+<p>14640 rows × 15 columns</p>
+</div>
+</div>
+
+</div>
     
 
         <!-- Container (analysis report) -->
