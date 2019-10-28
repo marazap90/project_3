@@ -15,7 +15,7 @@ We developed machine learning models to accurately determine what sentiment a tw
 
 
 ## Resource
-https://www.kaggle.com/crowdflower/twitter-airline-sentiment/version/2
+https://www.kaggle.com/crowdflower/twitter-airline-sentiment/version/4
 
 
 
