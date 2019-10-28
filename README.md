@@ -1,6 +1,6 @@
 ## Machine Learning Project
 
-## Opinion Mining - Airline Tweets
+# Opinion Mining - Airline Tweets
 
 In this project, we analyze airline tweets of passengers from different major US airlines to predict what sentiments those tweets carry. A tweet can have a positive, negative or neutral sentiment. 
 
